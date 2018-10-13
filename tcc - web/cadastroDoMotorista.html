@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IFBus - Cadastro do Motorista</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<header id="cabecalho">
+        <hgroup>
+            <h1>IFBus</h1>
+            <h2>Gerenciamento de frotas</h2>
+        </hgroup>
+
+        
+
+    <nav id="menu">
+        <ul type="disc">
+            <li><a href="paginainicial.html">Home</a></li>
+            <li><a href="cadastroDoMotorista.html">Cadastrar Novo Motorista</a></li>
+            <li><a href="cadastroDoVeiculo.html">Cadastrar Novo Veículo</a></li>
+            <li><a href="dadosDoMotorista.html">Dados Cadastrados</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<body>
+    <article id="formulariocadastro">
+    <form>
+
+        
+        <fieldset id="usuario"> 
+            <legend>Identificaçao do Motorista</legend>
+            <p>Nome: <input type="text" name="tNome" size="20" maxlength="30" placeholder="Nome Completo" /> </p>
+            <p>CPF: <input type="text" name="tCpf" size="20" maxlength="14" placeholder="000.000.000-00" /></p>
+            <p>Telefone: <input type="text" name="tfone" size="20" maxlength="15" placeholder="(00) 00000-0000" /></p>
+            <p>Email: <input type="email" name="tMail" size="20" maxlength="40" placeholder="ex: name@gmail.com"/></p>
+            <fieldset id="sexo">
+            <legend>Sexo</legend>
+                <input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label><br />
+                <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+            </fieldset>
+            <p>Data de Nascimento: <input type="date"/></p>
+        </fieldset>
+
+
+       <fieldset id="endereco">
+           <legend>Endereço</legend>
+           <p>Rua: <input type="text" name="tRua" size="20" maxlength="50" placeholder="Nome da Rua"/></p>
+           <p>Número: <input type="text" name="tNum" size="20" maxlength="6" placeholder="ex: n.123"/></p>
+           <p>Bairro: <input type="text" name="tBairro" size="20" maxlength="50" placeholder="Nome do bairro"/></p>
+           <p>Cidade: <input type="text" name="tCity" size="20" maxlength="30" placeholder="Nome da cidade"/></p> 
+           <p>Estado: <input type="text" name="tEstado" size="20" maxlength="30" placeholder="Sigla do Estado"/></p> 
+       </fieldset>
+
+       <br />
+                
+       <button type="submit">Enviar</button>
+    </form>
+    </article>
+</body>
+
+
+</html>
